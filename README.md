@@ -21,8 +21,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/recipe-page-with-sass-pseudo-elements-oRPBR8pT4Y)
+- [Live Site URL](https://recipe-page-sharmsmy.vercel.app/)
 
 ## My process
 
