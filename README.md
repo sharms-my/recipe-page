@@ -16,7 +16,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop](https://github.com/sharms-my/recipe-page/blob/master/design/desktop-design.jpg)
+![Mobile](https://github.com/sharms-my/recipe-page/blob/master/design/mobile-design.jpg)
 
 ### Links
 

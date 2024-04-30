@@ -1,0 +1,159 @@
+@import "variables";
+@import "reset";
+
+body
+{
+    font-family: $font-outfit;
+    background-color: $theme-eggshell;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card 
+{
+    background-color: $theme-white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__image
+    {
+        overflow: hidden;
+    }
+    &__content
+    {
+        margin-top: 2.5em;
+        padding: 0 2em;
+        &__title
+        {
+            margin-bottom: 1.5em;
+            h1 
+            {
+                font-family: $font-young;
+                color:$theme-dark-charcoal;
+                margin-bottom: 1em;
+                font-weight: 400;
+                line-height: 1em;
+            }
+            p
+            {
+                color: $theme-wenge-brown;
+            }
+        }
+        &__detail
+        {
+            color: $theme-wenge-brown;
+            padding: 1.5em 0;
+            h3
+            {
+                font-family: $font-outfit;
+                color: $theme-nutmeg;
+            }
+            h2,h4
+            {
+                font-family: $font-young;
+                color:$theme-nutmeg;
+                font-weight: 400;
+                margin-bottom: 1em;
+            }
+            p
+            {
+                margin-bottom: 1.5em;
+            }
+            ul
+            {
+                list-style: none;
+                li 
+                {
+                    position: relative;
+                    display:flex;
+                    align-items:center;
+                    &::before
+                    {
+                        content: "•";
+                        width: 16px;
+                        margin-right: 1em;
+                        text-align: left;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            ol
+            {
+                padding: 0 1em;
+                li
+                {
+                    padding: 0 1em 0.5em 1em;
+                    &::marker
+                    {
+                        font-weight: 600;
+                        color: $theme-nutmeg;
+                    }
+                }
+            }
+            table 
+            {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            tr 
+            {
+                border-bottom: 2px solid $theme-light-grey;
+                td { padding: 0.75em 0 0.75em 2em; }
+                td + td 
+                {
+                    font-weight: 600;
+                }
+            }
+            &--rose
+            {
+                background-color: $theme-rose-white;
+                border-radius: 12px;
+                padding: 1.5em;
+                h3
+                {
+                    margin-bottom: 0.86em;
+                }
+            }
+            &--bottom
+            {
+                border-bottom: 2px solid $theme-light-grey;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) 
+{
+    .card {
+        max-width: 736px;
+        margin: 90px auto;
+        border-radius: 24px;
+        padding: 2.5em;
+        &__image
+        {
+            max-width: 656px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        &__content
+        {
+            padding: 0;
+            &__detail
+            {
+                padding: 1.5em 0;
+                &--rose
+                {
+                    padding: 1.5em;
+                }
+            }
+        }
+    }
+}
