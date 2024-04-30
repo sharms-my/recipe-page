@@ -72,9 +72,11 @@ main
                 list-style: none;
                 li 
                 {
+                    font-size: 1.25em;
                     position: relative;
                     display:flex;
                     align-items:center;
+                    margin-bottom: 0.5em;
                     &::before
                     {
                         content: "•";
@@ -90,6 +92,7 @@ main
                 padding: 0 1em;
                 li
                 {
+                    font-size: 1.25em;
                     padding: 0 1em 0.5em 1em;
                     &::marker
                     {
@@ -111,6 +114,11 @@ main
                 {
                     font-weight: 600;
                 }
+            }
+            .emphasis 
+            {
+                font-weight: 600;
+                display: contents;
             }
             &--rose
             {

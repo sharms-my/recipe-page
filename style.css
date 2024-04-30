@@ -104,9 +104,11 @@ main {
   list-style: none;
 }
 .card__content__detail ul li {
+  font-size: 1.25em;
   position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 0.5em;
 }
 .card__content__detail ul li::before {
   content: "•";
@@ -119,6 +121,7 @@ main {
   padding: 0 1em;
 }
 .card__content__detail ol li {
+  font-size: 1.25em;
   padding: 0 1em 0.5em 1em;
 }
 .card__content__detail ol li::marker {
@@ -137,6 +140,10 @@ main {
 }
 .card__content__detail tr td + td {
   font-weight: 600;
+}
+.card__content__detail .emphasis {
+  font-weight: 600;
+  display: contents;
 }
 .card__content__detail--rose {
   background-color: hsl(330, 100%, 98%);
